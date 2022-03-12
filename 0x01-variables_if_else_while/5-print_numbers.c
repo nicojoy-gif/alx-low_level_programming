@@ -8,13 +8,14 @@ int main(void)
 {
 	int num;
 	int d;
+	int temp;
 
 	scanf("%d", &num);
 
 	while (temp > 0)
 	{
-		d = n % 10;
-		n = n / 10;
+		d = num % 10;
+		num = num / 10;
 		printf("%d\n", d);
 	}
 	return (0);
