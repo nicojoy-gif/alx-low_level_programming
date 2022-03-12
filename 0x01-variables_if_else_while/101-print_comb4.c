@@ -17,7 +17,7 @@ int main(void)
 	for (i = 0; i < 1000; i++)
 	{
 		j = i / 100;
-		k = (i / 100) % 10;
+		k = (i / 10) % 10;
 		l = i % 10;
 
 		if (j < k && k < l)
@@ -33,8 +33,10 @@ int main(void)
 			}
 		}
 
+
 	}
 	putchar('\n');
+	
 	return (0);
 }
 
