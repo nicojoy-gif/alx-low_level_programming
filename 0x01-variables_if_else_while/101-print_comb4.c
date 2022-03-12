@@ -1,10 +1,9 @@
 #include <stdio.h>
-
 /**
 * main - main block
 * a program that prints all possible different combinations of 3 digits
 * Description: The three digits must be different
-* Print only the smallest combination of three digits
+* Print only the smallest combination of 3 digits
 * Numbers should be printed in ascending order, with three digits
 * You can only use the putchar function six times maximum in your code
 * You are not allowed to use any variable of type char
