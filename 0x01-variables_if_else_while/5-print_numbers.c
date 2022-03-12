@@ -1,22 +1,19 @@
 #include <stdio.h>
+
 /**
-* main - A program that prints all single digit number
-* of base 10 followed by a new line
+* main -prints all single digit of a base 10
+* followed by a new line
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-	int num;
-	int d;
-	int temp;
+	int 1;
 
-	scanf("%d", &num);
-
-	while (temp > 0)
+	for (1 = 0; 1 < 10; 1 = 1 + 1)
 	{
-		d = num % 10;
-		num = num / 10;
-		printf("%d\n", d);
+		printf("%d, 1);
 	}
+	putchar('\n");
 	return (0);
 }
+
