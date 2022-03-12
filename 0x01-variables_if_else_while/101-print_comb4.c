@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 /**
-* main - a program that prints all possible different combinations of 3 digits
+* main - main block
+* a program that prints all possible different combinations of 3 digits
 * Description: The three digits must be different
 * Print only the smallest combination of three digits
 * Numbers should be printed in ascending order, with three digits
 * You can only use the putchar function six times maximum in your code
 * You are not allowed to use any variable of type char
+* Return: Always 0 (sucess)
 */
 int main(void)
 {
@@ -30,6 +32,8 @@ int main(void)
 				putchar(32);
 			}
 		}
+
+		i++;
 	}
 	putchar('\n');
 	return (0);
