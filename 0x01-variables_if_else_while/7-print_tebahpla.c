@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 /**
-* main - print all single digits of base 10
+* main - print the alphabets in lowercase in reverse order
 * followed by a new line
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-	int i;
+	char ch;
 
-	for (i = 0; i < 10; i = 1 + i)
+	for (ch = 'z'; ch >= 'a'; ch--)
 	{
-		putchar("%d", i);
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
