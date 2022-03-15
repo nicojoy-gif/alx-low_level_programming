@@ -1,15 +1,21 @@
 #include <stdio.h>
+#include <main.h>
 
 /**
-* main - this program prints _putchar
-* foloowed by a new line
+* main - entry point
+* Description: It prints the word _putchar
+* followed by a new line
 * Return: Always 0 (Success)
 */
+
 int main(void)
 {
-	char n;
+	char word[9] = "_putchar\n";
+	int i;
 
-	n = _putchar;
-	putchar(n, '\n');
+	for (i = 0; i < 9; i++)
+	{
+		_putchar(word[i]);
+	}
 	return (0);
 }
