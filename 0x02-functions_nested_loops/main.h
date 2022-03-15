@@ -1,6 +1,6 @@
 #ifndef main_h
 #define main_h
 
-int main(int x);
+char word[9] = "_putchar\n";
 
 #endif
