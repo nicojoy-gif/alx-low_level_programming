@@ -1,6 +1,6 @@
 #ifndef main_h
 #define main_h
 
-_putchar(word[i]);
+int _putchar(const char *string);
 
 #endif
