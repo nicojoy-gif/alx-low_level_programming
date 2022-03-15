@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include <main.h>
+#include "main.h"
 
 /**
 * main - entry point
@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char word[9] = "_putchar\n";
+	char word[9] = "putchar\n";
 	int i;
 
 	for (i = 0; i < 9; i++)
