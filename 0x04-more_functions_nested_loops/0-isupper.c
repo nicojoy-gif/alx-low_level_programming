@@ -2,7 +2,7 @@
 
 /**
  * _isupper - entry point
- * Description: it checks for uppercase character
+ * Description: function that checks for uppercase character
  * @c: variable used
  * Return: int.
  */
