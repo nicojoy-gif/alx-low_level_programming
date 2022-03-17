@@ -2,9 +2,9 @@
 
 /**
  * _isupper - entry point
- * Description: function that checks for uppercase character
+ * Description: it checks for uppercase
  * @c: variable used
- * Return: int.
+ * Return: int
  */
 int _isupper(int c)
 {
