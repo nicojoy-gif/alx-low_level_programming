@@ -2,7 +2,7 @@
 
 /**
  * _isupper - entry point
- * Description: checks for uppercase
+ * Description: checks for uppercase.
  * Return: int
  */
 int _isupper(int c)
