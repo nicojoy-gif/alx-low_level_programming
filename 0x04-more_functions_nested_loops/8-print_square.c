@@ -11,7 +11,7 @@ void print_square(int size)
 	int files;
 	int columns;
 
-	if (size > 8)
+	if (size > 0)
 		for (files = 0; files < size; files++)
 		{
 			for (columns = 0; columns < size; columns++)
