@@ -3,6 +3,7 @@
 /**
  * _isupper - entry point
  * Description: checks for uppercase.
+ * @c: variable
  * Return: int
  */
 int _isupper(int c)
