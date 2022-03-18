@@ -4,7 +4,7 @@
  * main - entry point
  * Description: a program that prints the numbers from 1 to 100,
  * followed by a new line. But for multiples of 3 print fizz
- * Return: int
+ * Return: 0
  */
 int main(void)
 {
@@ -28,7 +28,7 @@ int main(void)
 			}
 			else
 			{
-				printf("Buzz ");
+				printf("Buzz");
 			}
 		}
 		else
