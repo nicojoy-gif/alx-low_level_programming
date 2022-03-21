@@ -2,7 +2,7 @@
 
 /**
  * _puts - entry point
- * Description - a function that prints a string, followed by a new line, to stdout.
+ * Description - a function that prints a string
  * @str: variable used
  * Return: nothing
  */
