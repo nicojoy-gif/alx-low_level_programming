@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <time.h>
+#include <math.h>
 /**
  * main - entry point
  * Description - a program that generates random valid passwords
@@ -8,34 +9,28 @@
  */
 int main(void)
 {
-	char a[10], c[10];
-	int i, j, k = 0;
-	
-	printf("#Keygen by b44nz0r\n\n");
+	int ascii = 2772, i = 0, j, random;
+	char password[100];
+	time_t t;
 
-	while (k < 5 || k >= 10)
+	srand((int) time(&t));
+	while (ascii > 126)
 	{
-		if (k != 0)
-			printf("\nThe username length should be 5 to 10 alphabets\n");
-
-		printf("enter username: ");
-		scanf("%s", a);
-		k = strlen(a);
+		random = rand() % 126;
+		password[i] = random;
+		ascii -= random;
+		i++;
 	}
-
-	i = k - 1;
-	j = 0;
-
-	while (i >= 0)
+	if (ascii > 0)
+		password[i] = ascii;
+	else
 	{
-		c[j] = a[i] + i;
 		i--;
-		j++;
 	}
 
-	c[j] = 0;
-	printf("\nThe password is %s\n", c);
-	printf("\nHit Enter to Exit\n");
-	getchar();
-	getchar();
+	for (j = 0; j <= i; j++)
+	{
+		printf("%c", password[j]);
+	}
+	return (0);
 }
