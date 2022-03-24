@@ -18,5 +18,6 @@ char *string_toupper(char *name)
 	}
 	*name = '\0';
 	return (s);
+	return (0);
 }
 
