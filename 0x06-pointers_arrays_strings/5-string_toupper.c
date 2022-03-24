@@ -16,7 +16,7 @@ char *string_toupper(char *name)
 		*name = (*name > 'a' && *name <= 'z') ? *name - 32 : *name;
 		name++;
 	}
-	*name = '\0';
+	name = '\0';
 	return (s);
 	return (0);
 }
