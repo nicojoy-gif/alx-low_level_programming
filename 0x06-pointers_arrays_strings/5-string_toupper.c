@@ -3,21 +3,19 @@
 /**
  * string_toupper - entry point
  * Description - changes all lowercase letter to uppercase
- * @name: variable used
- * *: variable
- * Return: Always 0
+ * @c: variable sed
+ * Return: Always c
  */
-char *string_toupper(char *name)
+char *string_toupper(char *c)
 {
-	char *s = name;
+	int i;
 
-	while (*name)
+	for (i = 0; c[i] != '\0'; i++)
 	{
-		*name = (*name > 'a' && *name <= 'z') ? *name - 32 : *name;
-		name++;
+		if (c[i] > 96 && c[i] < 123)
+		{
+			c[i] -= 32;
+		}
 	}
-	name = '\0';
-	return (s);
-	return (0);
+	return (c);
 }
-
