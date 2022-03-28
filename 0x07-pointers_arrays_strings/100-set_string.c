@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** set_string - entry point
+/**
+ * set_string - entry point
  * Description - set the value of a pointer to char
  * @s: pointer to pointer
  * @to: pointer char
