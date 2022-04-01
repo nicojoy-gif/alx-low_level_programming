@@ -18,9 +18,9 @@ int main(int argc, char *argv[])
 
 	product = 0;
 
-	if (argc > 1)
+	if (argc > 0)
 	{
-		for (i = 1; i < argc; i++)
+		for (i = 0; i < argc; i++)
 		{
 			n1 = atoi(argv[1]);
 			n2 = atoi(argv[2]);
