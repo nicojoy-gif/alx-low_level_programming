@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	int product = 0;
 
 
-	if (argc > 2)
+	if (argv[1] && argv[2])
 	{
 		for (i = 1; i < argc; i++)
 		{
