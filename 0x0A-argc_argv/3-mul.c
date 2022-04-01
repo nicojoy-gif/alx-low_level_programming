@@ -18,20 +18,19 @@ int main(int argc, char *argv[])
 
 	product = 0;
 
-	for (i = 0; i < argc; i++)
+	if (argc > 1)
 	{
-		if (!*argv[i] == '\0')
+		for (i = 1; i < argc; i++)
 		{
-		n1 = atoi(argv[1]);
-		n2 = atoi(argv[2]);
-		product = n1 * n2;
+			n1 = atoi(argv[1]);
+			n2 = atoi(argv[2]);
+			product = n1 * n2;
 		}
-		else
-		{
-			printf("Error\n");
-		}
-	}
 	printf("%d\n", product);
-
+	}
+	else
+	{
+	printf("Error\n");
+	}
 	return (1);
 }
