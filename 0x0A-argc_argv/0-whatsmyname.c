@@ -1,7 +1,10 @@
 #include <stdio.h>
 
-/** main - check the code
+/**
+ * main - check the code
  * Description - a program that prints its name followed by a new line
+ * @argc: agument used
+ * @argv: argument used
  * Return: int
  */
 int main(int argc, char *argv[])
@@ -12,5 +15,5 @@ int main(int argc, char *argv[])
 	{
 	printf("%s\n", argv[i]);
 	}
-	return 0;
+	return (0);
 }
