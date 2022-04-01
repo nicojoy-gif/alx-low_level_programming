@@ -10,21 +10,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int n1;
-	int n2;
-	int product = 0;
-
+	(void) argc;
 
 	if (argv[1] && argv[2])
 	{
-		for (i = 1; i < argc; i++)
-		{
-			n1 = atoi(argv[1]);
-			n2 = atoi(argv[2]);
-			product = n1 * n2;
-		}
-		printf("%d\n", product);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	}
 	else
 	{
