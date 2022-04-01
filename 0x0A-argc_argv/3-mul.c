@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
 	product = 0;
 
-	if (argc > 0)
+	if (argc > 1)
 	{
 		for (i = 0; i < argc; i++)
 		{
