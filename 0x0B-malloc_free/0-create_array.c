@@ -13,17 +13,24 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ar;
+	int i;
 
-	ar = malloc(size * sizeof(c));
+	i = 0;
+	while (1)
+	{
+		ar = malloc(size * sizeof(c));
 
-	if (size == 0)
-	{
-		return ("NULL");
+		if (size == 0)
+		{	
+			return ("NULL");
+		}
+		else
+		{
+			return (ar);
+		}
+		ar[0] = 'H';
+		i++;
+		free(ar);
 	}
-	else
-	{
-		return (ar);
-	}
-	free(ar);
 }
 
