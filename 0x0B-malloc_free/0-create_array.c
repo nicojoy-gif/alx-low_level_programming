@@ -21,16 +21,16 @@ char *create_array(unsigned int size, char c)
 		ar = malloc(size * sizeof(c));
 
 		if (size == 0)
-		{	
+		{
 			return ("NULL");
 		}
 		else
 		{
 			return (ar);
-		}
 		ar[0] = 'H';
 		i++;
 		free(ar);
+		}
 	}
 }
 
