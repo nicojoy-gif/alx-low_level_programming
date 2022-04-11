@@ -46,10 +46,14 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newd;
+	
+	if (name == NULL || age < 0 || owner == NULL)
+		return (NULL);
 
 	newd = malloc(sizeof(struct dog));
 	if (newd == NULL)
 		return (NULL);
+
 	if (name == NULL)
 	{
 		free(newd);
