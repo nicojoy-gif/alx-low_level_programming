@@ -1,19 +1,26 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTION_H
 
+/*
+ * File: variadic_functions.h
+ * Auth: Balogun Murtadho
+ * Desc: Header file containing prototypes for all functions
+ *       used in the 0x0F-variadic_functions directory.
+ */
+
 #include <stdarg.h>
 
-int _putchar(char c);
 /**
  * struct pter - pointer to print all
  * @test: pointer to input for test
  * @printer: pointer to function
  */
-typedef struct pter
+typedef struct printer
 {
-	char *test;
-	void (*printer)();
-} pt;
+	char *symbol;
+	void (*print)(va_list arg);
+} printer_t;
+
 void print_int(va_list arg);
 void print_char(va_list arg);
 void print_float(va_list arg);
