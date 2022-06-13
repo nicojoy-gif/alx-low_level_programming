@@ -1,0 +1,16 @@
+#include "main.h"
+
+/**
+ * _isdigit - entry point
+ * Description: it checks for a digit
+ * @c: variable used
+ * Return: Always int
+ */
+int _isdigit(int c)
+{
+	if (c >= 48 && c <= 57)
+		return (1);
+	else
+		return (0);
+}
+
